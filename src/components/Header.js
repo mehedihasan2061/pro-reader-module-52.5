@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -33,34 +34,34 @@ const Header = () => {
           </a>
           <ul className='flex items-center hidden space-x-8 lg:flex'>
             <li>
-              <a
-                href='/home'
+              <Link
+                to='/home'
                 aria-label='Home'
                 title='Home'
                 className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href='/books'
+              <Link
+                to='/books'
                 aria-label='Books'
                 title='Books'
                 className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
               >
                 Books
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href='/about'
+              <Link
+                to='/about'
                 aria-label='About us'
                 title='About us'
                 className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
               >
                 About us
-              </a>
+              </Link>
             </li>
           </ul>
           <div className='lg:hidden'>
