@@ -23,6 +23,10 @@ function App() {
           element: <Home></Home>,
         },
         {
+          path: "/home",
+          element: <Home></Home>,
+        },
+        {
           path: "/books",
           loader: () => {
             return fetch('https://api.itbook.store/1.0/new')
